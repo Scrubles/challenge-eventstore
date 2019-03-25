@@ -34,4 +34,10 @@ public interface EventStore {
      * (inclusive) and {@param endTime} (exclusive).
      */
     EventIterator query(String type, long startTime, long endTime);
+    
+    /**
+     * Retrieves the amount of events
+     * Added for testing purposes
+     */
+    int count();
 }
